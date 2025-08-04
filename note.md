@@ -102,3 +102,77 @@ Tạo đường kẻ ngang
 - section: Thể hiện 1 phần trên 1 trang web
 - article: Thể hiện 1 nội dung độc lập với các phần còn lại (Ví dụ: sản phẩm, bài viết, bình luận,...)
 - aside: Thể hiện cột bên của trang web
+
+## Các thẻ trong nhóm inline
+
+1. Thẻ chèn liên kết (a = anchor)
+
+```html
+<a href="dia-chi-trang-web">Văn bản hiện thị</a>
+```
+
+Các thuộc tính khác:
+
+- target: Mục tiêu khi mở trang web
+
+* `_self`: Ở tab hiện tại
+* `_blank`: Ở tab mới
+
+- title: Hiển thị nội khi trỏ chuột
+
+```
+http://127.0.0.1:63782/1.%20hochtml/csc/cscscss/ex02.html
+
+/note.md --> http://127.0.0.1:63782/note.md
+
+https://vnexpress.net/khoa-hoc-cong-nghe/bo-khoa-hoc-va-cong-nghe
+
+1. /khoa-hoc --> https://vnexpress.net/khoa-hoc
+
+2. ./khoa-hoc --> https://vnexpress.net/khoa-hoc-cong-nghe/khoa-hoc
+
+3. ../khoa-hoc --> https://vnexpress.net/khoa-hoc
+
+https://hoanganit19.github.io/viedeli_k6/
+https://hoanganit19.github.io/images/logo.png
+```
+
+2. Thẻ chèn hình ảnh (img)
+
+```html
+<img
+  src="duong-dan-anh"
+  width="chieu-rong"
+  height="chieu-cao"
+  alt="Van ban thay the"
+  title="Tieu de khi tro chuot"
+/>
+```
+
+3. Thẻ span (Thẻ định dạng kiểu)
+
+- Không có ý nghĩa (non-semantic)
+- Nó dùng để định dạng 1 kiểu khác mà vẫn giữ yếu tố inline (Trên dòng)
+
+4. Thẻ in đậm, nghiêng, gạch chân, gạch ngang
+
+- In đậm: b
+- Nghiêng: i
+- Ngạch chân: u
+- Gạch ngang: s
+
+5. Thẻ công thức toán học, hóa học
+
+6. Table
+
+- table --> Quy định bảng
+- tr --> Quy định hàng
+- td --> Quy định cột
+- th --> Quy định cột (Với nội dung là tiêu đề)
+
+table -> tr -> td
+
+cellspacing: Khoảng cách giữa các ô trong bảng
+cellpadding: Khoảng cách giữa ô với nội dung
+
+7. Thẻ ngắt dòng: `<br/>`
