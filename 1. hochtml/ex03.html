@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <div>
+        <label for="lbl-fullname">Họ và tên</label>
+        <input
+          type="text"
+          id="lbl-fullname"
+          name="fullname"
+          placeholder="Họ và tên..."
+          value="Hoàng An"
+        />
+      </div>
+      <div>
+        <label for="lbl-email">Email</label>
+        <input
+          type="email"
+          id="lbl-email"
+          name="email"
+          placeholder="Email..."
+        />
+      </div>
+      <div>
+        <label for="lbl-age">Tuổi</label>
+        <input type="number" id="lbl-age" name="age" placeholder="Tuổi..." />
+      </div>
+
+      <div>
+        <label for="lbl-birthday">Sinh nhật</label>
+        <input type="date" id="lbl-birthday" name="date" />
+      </div>
+
+      <div>
+        <label for="lbl-avatar">Avatar</label>
+        <input type="file" id="lbl-avatar" name="avatar" multiple />
+      </div>
+
+      <div>
+        <label>Giới tính</label>
+        <label>
+          <input type="radio" name="gender" value="unknown" /> Không biết
+        </label>
+        <label>
+          <input type="radio" name="gender" value="male" checked /> Nam
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" />
+          Nữ
+        </label>
+      </div>
+
+      <div>
+        <label>Sở thích</label>
+        <label>
+          <input type="checkbox" name="sothich" value="game" /> Game
+        </label>
+        <label>
+          <input type="checkbox" name="sothich" value="music" checked /> Nghe
+          nhạc
+        </label>
+        <label>
+          <input type="checkbox" name="sothich" value="walk" />
+          Đi bộ
+        </label>
+      </div>
+
+      <div>
+        <label for="province">Tỉnh/Thành phố</label>
+        <select name="province" id="province">
+          <option value="0">Chọn Tỉnh/Thành phố</option>
+          <option value="1">Hà Nội</option>
+          <option value="2" selected>Đà Nẵng</option>
+          <option value="3">Hồ Chí Minh</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="messages">Tin nhắn</label>
+        <textarea name="messages" id="messages" placeholder="Nhập tin nhắn...">
+Ahihi</textarea
+        >
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="button">Button</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <h1 id="title">Học lập trình không khó</h1>
+    <h2 class="sub-title title-red">Học lập trình quá khó</h2>
+  </body>
+</html>

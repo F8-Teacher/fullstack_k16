@@ -176,3 +176,77 @@ cellspacing: Khoảng cách giữa các ô trong bảng
 cellpadding: Khoảng cách giữa ô với nội dung
 
 7. Thẻ ngắt dòng: `<br/>`
+
+8. Biểu mẫu (form)
+
+- Thẻ form
+
+* action: URL mà trình duyệt sẽ gửi request tới
+* method: Phương thức gửi (Theo quy ước của http)
+  ** get: Dữ liệu của form sẽ được đẩy lên url của action (Theo dạng query string)
+  ** post: Không gửi dữ liệu lên url mà sẽ gửi ở dạng form data
+
+Lưu ý: Trường phải có name để server nhận được dữ liệu
+
+Các trường trong form
+
+8.1. Thẻ input --> Rất nhiều trường hợp, thay đổi bằng thuộc tính type
+
+- text: Mặc định, nhập cái gì cũng được
+- email: Định dạng email
+- number: Định dạng số
+- date: Định dạng ngày - tháng - năm
+- file: Chọn file
+- radio: Lựa chọn (Chỉ chọn 1 trong 1 nhóm, dựa vào name)
+- checkbox: Lựa chọn (Chọn nhiều)
+
+  8.2. Thẻ select
+
+  8.3. Thẻ textarea
+
+Giá trị mặc định:
+
+- Input nhập liệu: Dùng thuộc tính value
+- Radio, Checkbox: Dùng thuộc tính checked
+- Select option: Dùng thuộc tính selected ở thẻ option
+- Textarea: Thêm vào phần nội dung của thẻ (Giữa mở và đóng thẻ)
+
+  8.4. Thẻ button
+
+- type: submit --> Gửi form (Mặc định)
+- type: button --> Tạo hình cái button
+- type: reset --> Xóa dữ liệu của form (Không nên dùng)
+
+Tổng kết:
+
+1. Nhập liệu 1 dòng
+
+- input text, input email, input number
+
+2. Nhập liệu nhiều dòng
+
+- textarea
+
+3. Lựa chọn
+
+- file
+- date
+- radio
+- checkbox
+- select option
+
+4. Nút
+
+- button
+
+Quy ước đặt id, class
+
+- Chữ hoa, chữ thường, số, gạch ngang, gạch dưới, dấu :
+- Không được bắt đầu bằng số
+- Dùng danh từ
+- Đặt tên bằng Tiếng Anh (Có ý nghĩa)
+
+Với class:
+
+- Đặt được nhiều class giống nhau trên 1 trang web (Mang tính kế thừa)
+- Trong 1 thẻ html (Phần tử, element) có thể đặt nhiều class (Mỗi class cách nhau bởi khoảng trắng)
