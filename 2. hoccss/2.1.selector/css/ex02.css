@@ -1,0 +1,60 @@
+/* h2::before {
+  content: "A";
+}
+h2::after {
+  content: "B";
+}
+
+p::first-letter {
+  color: red;
+}
+p::first-line {
+  color: green;
+}
+p::selection {
+  background: black;
+  color: white;
+}
+input::placeholder {
+  color: red;
+} */
+
+/* h2:hover {
+  color: red;
+}
+h2:active {
+  color: green;
+}
+input:focus {
+  background: yellow;
+}
+input:focus::placeholder {
+  color: red;
+}
+input:hover::placeholder {
+  color: green;
+}
+button:focus {
+  background: red;
+  color: #fff;
+}
+p:focus {
+  color: red;
+} */
+
+/* input:not(input[type="email"], input[type="number"]) {
+  background: yellow;
+} */
+/* input:not(input[type="email"]):not(input[type="number"]) {
+  background: yellow;
+} */
+
+/* .check-item:checked ~ span {
+  color: red;
+} */
+
+input:disabled {
+  border-color: red;
+  color: white;
+  background: grey;
+}

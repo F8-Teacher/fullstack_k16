@@ -1,0 +1,81 @@
+/* #title {
+  color: red;
+}
+.sub-title {
+  color: green;
+}
+p {
+  color: blueviolet;
+} */
+
+/* * {
+  color: red;
+} */
+
+/* .box h2 {
+  color: red;
+}
+.content h2 {
+  color: green;
+} */
+
+/* .box > h2 {
+  color: red;
+}
+.box > div > h2 {
+  color: green;
+} */
+/* .title {
+  color: red;
+}
+
+h3.sub-title {
+  color: green;
+} */
+
+/* .products .title.title-large {
+  color: red;
+}
+.posts .title.title-large {
+  color: green;
+} */
+
+/* .box h2,
+.content h2 {
+  color: green;
+} */
+
+/* p ~ h2 {
+  color: red;
+}
+
+p ~ div h2 {
+  color: green;
+} */
+
+/* p + h2 {
+  color: red;
+} */
+
+/* h2 + h2 {
+  color: red;
+} */
+
+/* a[target="_blank"] {
+  color: red;
+} */
+
+/* a[title^="F8"] {
+  color: red;
+} */
+
+/* a[title$="123"] {
+  color: red;
+} */
+
+/* a[title~="F8"] {
+  color: red;
+} */
+/* h2[class^="title-"] {
+  color: green;
+} */
