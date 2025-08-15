@@ -1,0 +1,40 @@
+/* ul .item:first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: green;
+} */
+/* ul li:first-of-type {
+  color: #ff0000;
+}
+ul li:last-of-type {
+  color: green;
+} */
+/* ul span:last-child {
+  color: green;
+} */
+
+/* ul li:nth-child(2n + 2) {
+  color: red;
+} */
+/* ul li:nth-of-type(2n + 2) {
+  color: red;
+} */
+
+/* input:valid + span {
+  color: red;
+} */
+
+#red:checked ~ nav label[for="red"],
+#red:checked ~ .content {
+  color: red;
+}
+#green:checked ~ nav label[for="green"],
+#green:checked ~ .content {
+  color: green;
+}
+#blue:checked ~ nav label[for="blue"],
+#blue:checked ~ .content {
+  color: blue;
+}

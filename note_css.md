@@ -165,3 +165,47 @@ selector:ten-lop {
 - last-of-type
 - nth-child
 - nth-of-type
+
+## Các thuộc tính định dạng text
+
+1. color
+
+Thay đổi màu văn bản
+
+2. font-size
+
+Thay đổi cỡ chữ của văn bản
+
+Đơn vị:
+
+- Tuyệt đối: px
+- Tương đối:
+
+* em --> Tỷ lệ với font-size của phần tử cha
+* rem --> Tỷ lệ với font-size của thẻ html
+* vw (viewport width)
+* vh (viewport height)
+* %
+
+3. line-height
+
+- Thay đổi chiều cao của dòng văn bản
+- Tỷ lệ với cỡ chữ của phần tử đó
+
+4. font-family
+
+- Thay đổi font chữ của văn bản
+- Cú pháp: font-family: font1, font2,...
+
+serif: Họ font có chân
+sans-serif: Họ font không chân
+
+5. font-weight
+
+- Thiết lập độ dày của văn bản
+- Giá trị: Bội số của 100 (Từ 100 đến 900), normal, bold
+
+6. font-style
+
+- normal
+- italic
