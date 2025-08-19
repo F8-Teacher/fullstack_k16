@@ -1,0 +1,24 @@
+body {
+  height: 500vh;
+  color: white;
+  /* border: 5px solid red; */
+  /* background-color: rgb(255, 38, 0); */
+  /* background-image: url("https://fastly.picsum.photos/id/453/536/354.jpg?hmac=hWEr7EsZg86LgZMODX4O6iCD6Rzu0B9MXJWclb1Tb_8");
+  background-repeat: no-repeat;
+  background-position: 0 0; */
+  /* background-size: 100% 100%; */
+  /* background-size: contain; */
+  /* background-attachment: fixed; */
+  background: rgb(255, 38, 0)
+    url("https://fastly.picsum.photos/id/453/536/354.jpg?hmac=hWEr7EsZg86LgZMODX4O6iCD6Rzu0B9MXJWclb1Tb_8")
+    no-repeat 0 0 / cover fixed;
+}
+/* .box {
+  background-color: rgba(255, 255, 0, 0.347);
+  width: 400px;
+  height: 300px;
+} */
+
+h1:hover {
+  border: 1px solid red;
+}
