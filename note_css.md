@@ -409,3 +409,62 @@ Nếu dùng đơn vị vh --> Tỷ lệ với chiều cao của khung nhìn (vie
   border: 0;
 }
 ```
+
+## Flex
+
+### Các thuộc tính trong flex container
+
+1. display: flex --> Kích hoạt flexbox
+
+2. flex-direction --> Chọn hướng của trục main (Mặc định nằm ngang)
+
+- row --> Ngằm ngang (Mặc định)
+- row-reverse --> Nằm ngang, đảo ngược
+- column --> Nằm dọc
+- column-reverse --> Nằm dọc, đảo ngược
+
+2. justify-content: Căn chỉnh các item theo hướng song song với trục main
+
+- flex-start
+- center
+- flex-end
+- space-around
+- space-between
+- space-evenly
+
+3. align-items: Căn chỉnh các item theo hướng song song với trục cross
+
+- stretch --> Mặc định
+- flex-start
+- center
+- flex-end
+- baseline
+
+4. flex-wrap
+
+- nowrap
+- wrap
+- wrap-reverse
+
+5. gap: Điều chỉnh khoảng cách giữa các item
+
+### Các thuộc tính trong flex item
+
+1. flex-grow: Giãn item chỉ định để lấp đầy vị trí còn trống của container
+   Cú pháp: flex-grow: number (Mặc định = 0)
+
+2. flex-shrink: Ngược lại với flex-grow
+
+Cú pháp: flex-shrink: number (Mặc định = 1)
+
+3. flex-basis: Thiết lập kích ban đầu của item
+
+flex-basis sẽ không chính xác nếu
+
+- Có max-width, max-height
+- Có max-height, min-height
+- Có flex-shrink, flex-grow
+
+4. order: Sắp các item theo thứ tự mong muốn
+
+Cú pháp: order: number

@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  color: #333;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: system-ui, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.header {
+  background: #1f2937;
+  color: #fff;
+  padding: 10px 0;
+}
+.header .logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+.header .header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-inner .menu ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+.header .header-inner .menu a {
+  color: rgb(156 163 175);
+  font-weight: 600;
+}
+.header .header-inner .menu i {
+  color: rgb(156 163 175);
+  font-size: 1.2rem;
+}
+.header .header-inner .menu a:hover {
+  color: rgb(37 99 235);
+}
+.header .header-inner .auth {
+  display: flex;
+  gap: 10px;
+}
+.header .header-inner .btn {
+  color: #fff;
+  display: block;
+  padding: 7px 20px;
+  border-radius: 7px;
+}
+.header .header-inner .btn:hover {
+  background: rgb(156 163 175);
+}
+.header .header-inner .btn.btn-primary {
+  background: rgb(37 99 235);
+}
+.header .header-inner .btn.btn-primary:hover {
+  background: rgb(6, 83, 248);
+}
