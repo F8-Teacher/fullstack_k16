@@ -468,3 +468,27 @@ flex-basis sẽ không chính xác nếu
 4. order: Sắp các item theo thứ tự mong muốn
 
 Cú pháp: order: number
+
+## Position
+
+Điều chỉnh vị trí của các phần tử
+
+4 loại:
+
+- Vị trí tương đối
+- Vị trí tuyệt đối
+- Cố định
+- Tĩnh (Mặc định)
+
+Cú pháp:
+
+position: static | relative | absolute | fixed
+
+Các thuộc tính trong position (Chỉ khả dụng khi có position khác static)
+
+- top
+- left
+- right
+- bottom
+- z-index
+- inset

@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Asap", sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #333;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.banner {
+  position: relative;
+}
+.banner .banner-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 15px;
+  color: #fff;
+  padding: 0 15px;
+}
+.banner .banner-content .logo {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.banner .banner-content .info h1 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.banner .banner-content .info h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.banner .banner-content .info h2 span {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.banner .banner-content .info .row {
+  display: flex;
+  gap: 15px;
+}
+.banner .overlay {
+  position: absolute;
+  inset: 0;
+  background: #0000009f;
+}
+.banner img {
+  display: block;
+}
