@@ -1,0 +1,31 @@
+/*
+overflow: visible | hidden | scroll | auto
+
+overflow-x: Tùy chỉnh theo trục x
+overflow-y: Tùy chỉnh theo trục y
+
+visibility: visible | hidden
+*/
+/* .box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+p {
+  width: 300px;
+} */
+
+/* p {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+} */
+
+img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
