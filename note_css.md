@@ -492,3 +492,51 @@ Các thuộc tính trong position (Chỉ khả dụng khi có position khác sta
 - bottom
 - z-index
 - inset
+
+## Transition
+
+Lưu ý: Chỉ tác dụng với các thuộc tính có giá trị là số
+
+Màu giá trị cũng là số
+
+1. Thuộc tính transition-property
+
+- Chọn thuộc tính css để cho phép áp dụng transition
+- Mỗi thuộc tính cách nhau bởi dấu ,
+- Có thể chọn tất cả bằng cách dùng giá trị all
+
+Ví dụ:
+
+```css
+transition-property: width, color;
+```
+
+2. Thuộc tính transition-duration
+
+- Chọn thời gian hoàn thành quá trình chuyển động
+- Đơn vị: s, ms
+
+3. Thuộc tính transition-delay
+
+- Thời gian trễ trước khi chuyển động bắt đầu
+- Đơn vị: s, ms
+
+4. Thuộc tính transition-timing-function
+
+- ease (Mặc định): Chuyển động chậm - nhanh - chậm
+- ease-in: Chuyển động chậm - nhanh
+- ease-out: Chuyển động nhanh - chậm
+- ease-in-out: Chuyển động chậm - nhanh - chậm
+- linear: Chuyển động đều
+- cubic-bezier(): Tự thiết lập
+
+5. Thuộc tính transition
+
+transtion: property duration delay timing-function
+
+Nếu muốn khai báo nhiều thuộc tính:
+
+```css
+transition-property: width, height;
+transtion: 0.3s linear;
+```
