@@ -540,3 +540,121 @@ Nếu muốn khai báo nhiều thuộc tính:
 transition-property: width, height;
 transtion: 0.3s linear;
 ```
+
+## Transform
+
+- Thay đổi hình dạng ban đầu của phần tử html
+- Tác dụng: xoay, ngiêng, phóng to / thu nhỏ, dịch chuyển
+
+Cú pháp: transform: value
+
+1. Xoay
+
+- rotate(angle) --> Xoay phần tử theo trục Z
+- rotateX(angle) --> Xoay phần tử theo trục X
+- rotateY(angle) --> Xoay phần tử theo trục Y
+
+Thuộc tính tách riêng: rotate: angle
+
+2. Nghiêng
+
+- skew(x, y) --> Nghiêng theo trục x và y
+- skewX(value) --> Nghiêng theo trục x
+- skewY(value) --> Nghiêng theo trục y
+
+3. Phóng to / Thu nhỏ
+
+- scale(x, y) --> phóng to / thu nhỏ theo trục x, y
+- scaleX(value) --> phóng to / thu nhỏ theo trục x
+- scaleY(value) --> phóng to / thu nhỏ theo trục y
+
+Thuộc tính tách riêng: scale: x y;
+
+4. Dịch chuyển
+
+- translate(x, y) --> Dịch chuyển theo trục x, y (Không thay đổi bố cục ban đầu)
+- translateX(value) --> Dịch chuyển theo trục X
+- translateY(value) --> Dịch chuyển theo trục Y
+
+Thuộc tính tách riêng: translate: x y
+
+## Responsive Web Design
+
+- Thiết kế web thích ứng
+- Đảm bảo giao diện tương thích với tất cả thiết bị
+- Nhận diện thiết bị thông qua kích thước màn hình (Chiều rộng)
+
+- Hình thức khác để tạo giao diện trên thiết bị khác: Adaptive
+
+1. Breakpoint
+
+- Điểm tọa độ màn hình mà tại điểm đó giao diện sẽ bị thay đổi
+- Không có các breakpoint cố định cho mọi dự án, mà chỉ có breakpoint phổ biến
+- Các breakpoint phổ biến
+
+* 1400px
+* 1200px
+* 992px -->
+* 768px -->
+* 576px
+
+2. Meta Viewport
+
+Thẻ meta được thêm thẻ head để xác định tỷ lệ của các phiên bản màn hình
+
+3. Media Queries
+
+- At-rule của CSS cho phép áp dụng các khối CSS với breakpoint chỉ định
+- Cú pháp:
+
+```css
+@media sreen and (max-width: breakpoint) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+```
+
+Ví dụ:
+
+```css
+@media sreen and (min-width: 400px) and (max-width: 800px) {
+  body {
+    color: red;
+  }
+}
+```
+
+Áp dụng các breakpoint vào media queries
+
+```css
+@media screen and (max-width: 1399px) {
+  Selector {
+    thuoctinh: giatri;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  Selector {
+    thuoctinh: giatri;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  Selector {
+    thuoctinh: giatri;
+  }
+}
+
+@media screen and (max-width: 787.98px) {
+  Selector {
+    thuoctinh: giatri;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  Selector {
+    thuoctinh: giatri;
+  }
+}
+```
