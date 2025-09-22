@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  gap: 5px;
+}
+
+span {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  background-color: red;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+  50% {
+    height: 70px;
+  }
+}
+span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+/*
+@keyframes loading {
+  from {
+    height: 100%;
+  }
+
+  50% {
+    height: 50%;
+  }
+
+  to {
+    height: 100%;
+  }
+} */

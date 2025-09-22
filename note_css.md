@@ -658,3 +658,46 @@ Ví dụ:
   }
 }
 ```
+
+## Animation
+
+- Thuộc tính cho phép thiết lập hiệu ứng
+- Định nghĩa hiệu ứng --> Dùng @keyframes
+
+Cú pháp:
+
+```css
+@keyframes ten-hieu-ung {
+  p1% {
+    thuoctinh: giatri;
+  }
+
+  p2% {
+    thuoctinh: giatri;
+  }
+
+  p3% {
+    thuoctinh: giatri;
+  }
+
+  pn% {
+    thuoctinh: giatri;
+  }
+}
+```
+
+Phần trăm trong keyframes sẽ là tỷ lệ với tổng thời gian hoàn thành hiệu ứng
+
+Giá trị đặc biệt:
+
+from: Tương đương với 0%
+to: Tương đương với 100%
+
+Thuộc tính animation:
+
+- animation-name: ten-hieu-ung (keyframe)
+- animation-duration: thoigian (s,ms)
+- animation-delay: thoigian (s,ms)
+- animation-timing-function: ease|ease-in|ease-out|ease-in-out|linear
+- animation-iteration-count: so|infinite --> Số lần lặp lại hiệu ứng
+- animation: name duration delay timing-function iteration-count
