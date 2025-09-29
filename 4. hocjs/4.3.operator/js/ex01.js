@@ -122,7 +122,19 @@
 
 //5. Toán tử nullish (??)
 //Cú pháp: a ?? b
-let a;
-let b = 20;
-let result = a ?? b;
-console.log(result);
+// let a;
+// let b = 20;
+// let result = a ?? b;
+// console.log(result);
+
+//6. Toán tử 3 ngôi
+//Cú pháp: bieuthuc ? giatridung: giatrisai
+// let a = 0;
+// let b = 20;
+// let c = 30;
+// let result = !a ? b : c;
+// console.log(result);
+
+// let a = 10;
+// let total = 1 + 2 + 3 + (a >= 10 ? 20 : 10) + 5;
+// console.log(total);
