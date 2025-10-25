@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      body {
+        @apply h-screen;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="h-full bg-[blueviolet] flex items-center">
+      <form class="js-form bg-white w-[450px] mx-auto p-10 rounded-md">
+        <h1 class="text-3xl mb-3 font-bold">Create a new account</h1>
+        <div class="mb-5 js-username">
+          <label for="username" class="block font-bold mb-1">Username</label>
+          <div class="relative">
+            <input
+              id="username"
+              type="text"
+              placeholder="Username..."
+              class="border border-[#ddd] outline-none w-full py-2 px-3 rounded-sm"
+            />
+
+            <svg
+              class="js-icon-success hidden absolute top-[50%] -translate-y-[50%] right-2"
+              width="24px"
+              height="24px"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="green"
+                d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z"
+              />
+            </svg>
+            <svg
+              class="js-icon-error hidden absolute top-[50%] -translate-y-[50%] right-2"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1.5-5.009c0-.867.659-1.491 1.491-1.491.85 0 1.509.624 1.509 1.491 0 .867-.659 1.509-1.509 1.509-.832 0-1.491-.642-1.491-1.509zM11.172 6a.5.5 0 0 0-.499.522l.306 7a.5.5 0 0 0 .5.478h1.043a.5.5 0 0 0 .5-.478l.305-7a.5.5 0 0 0-.5-.522h-1.655z"
+                fill="red"
+              />
+            </svg>
+          </div>
+          <span class="js-error-message block text-red-600 text-sm mt-1"></span>
+        </div>
+        <div class="mb-5 js-email">
+          <label for="email" class="block font-bold mb-1">Email</label>
+          <div class="relative">
+            <input
+              id="email"
+              type="email"
+              placeholder="Email..."
+              class="border border-[#ddd] outline-none w-full py-2 px-3 rounded-sm"
+            />
+
+            <svg
+              class="js-icon-success hidden absolute top-[50%] -translate-y-[50%] right-2"
+              width="24px"
+              height="24px"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="green"
+                d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z"
+              />
+            </svg>
+            <svg
+              class="js-icon-error hidden absolute top-[50%] -translate-y-[50%] right-2"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1.5-5.009c0-.867.659-1.491 1.491-1.491.85 0 1.509.624 1.509 1.491 0 .867-.659 1.509-1.509 1.509-.832 0-1.491-.642-1.491-1.509zM11.172 6a.5.5 0 0 0-.499.522l.306 7a.5.5 0 0 0 .5.478h1.043a.5.5 0 0 0 .5-.478l.305-7a.5.5 0 0 0-.5-.522h-1.655z"
+                fill="red"
+              />
+            </svg>
+          </div>
+          <span class="js-error-message block text-red-600 text-sm mt-1"></span>
+        </div>
+        <div class="mb-5 js-password">
+          <label for="password" class="block font-bold mb-1">Password</label>
+          <div class="relative">
+            <input
+              id="password"
+              type="password"
+              placeholder="Password..."
+              class="border border-[#ddd] outline-none w-full py-2 px-3 rounded-sm"
+            />
+
+            <svg
+              class="js-icon-success hidden absolute top-[50%] -translate-y-[50%] right-2"
+              width="24px"
+              height="24px"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="green"
+                d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z"
+              />
+            </svg>
+            <svg
+              class="js-icon-error hidden absolute top-[50%] -translate-y-[50%] right-2"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1.5-5.009c0-.867.659-1.491 1.491-1.491.85 0 1.509.624 1.509 1.491 0 .867-.659 1.509-1.509 1.509-.832 0-1.491-.642-1.491-1.509zM11.172 6a.5.5 0 0 0-.499.522l.306 7a.5.5 0 0 0 .5.478h1.043a.5.5 0 0 0 .5-.478l.305-7a.5.5 0 0 0-.5-.522h-1.655z"
+                fill="red"
+              />
+            </svg>
+          </div>
+          <span class="js-error-message block text-red-600 text-sm mt-1"></span>
+        </div>
+        <div class="mb-5 js-password_confirmation">
+          <label for="password_confirmation" class="block font-bold mb-1"
+            >Password Confirmation</label
+          >
+          <div class="relative">
+            <input
+              id="password_confirmation"
+              type="password"
+              placeholder="Password Confirmation..."
+              class="border border-[#ddd] outline-none w-full py-2 px-3 rounded-sm"
+            />
+
+            <svg
+              class="js-icon-success hidden absolute top-[50%] -translate-y-[50%] right-2"
+              width="24px"
+              height="24px"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="green"
+                d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z"
+              />
+            </svg>
+            <svg
+              class="js-icon-error hidden absolute top-[50%] -translate-y-[50%] right-2"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1.5-5.009c0-.867.659-1.491 1.491-1.491.85 0 1.509.624 1.509 1.491 0 .867-.659 1.509-1.509 1.509-.832 0-1.491-.642-1.491-1.509zM11.172 6a.5.5 0 0 0-.499.522l.306 7a.5.5 0 0 0 .5.478h1.043a.5.5 0 0 0 .5-.478l.305-7a.5.5 0 0 0-.5-.522h-1.655z"
+                fill="red"
+              />
+            </svg>
+          </div>
+          <span class="js-error-message block text-red-600 text-sm mt-1"></span>
+        </div>
+        <button
+          class="block py-3 bg-[blueviolet] w-full text-white cursor-pointer"
+        >
+          Create account
+        </button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
