@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="max-w-[80%] mx-auto py-5">
+      <h1 class="text-center text-3xl font-bold mb-3">Blogs</h1>
+      <input
+        type="text"
+        class="js-search w-full border border-gray-400 outline-none px-3 py-2 mb-3"
+        placeholder="Search..."
+      />
+      <button
+        class="border border-gray-400 py-2 px-3 cursor-pointer hover:bg-green-800 hover:text-white mb-3"
+      >
+        Thêm mới
+      </button>
+      <div class="flex gap-3 mb-3">
+        <button
+          class="border border-gray-400 py-2 px-3 cursor-pointer bg-[yellow]"
+        >
+          Mới nhất
+        </button>
+        <button class="border border-gray-400 py-2 px-3 cursor-pointer">
+          Cũ nhất
+        </button>
+      </div>
+      <div class="js-loading"></div>
+      <div class="js-post-list"></div>
+      <div class="flex gap-3 flex-wrap">
+        <button
+          class="border border-gray-500 block py-2 px-4 bg-[green] text-white"
+        >
+          1
+        </button>
+        <button class="border border-gray-500 block py-2 px-4">2</button>
+        <button class="border border-gray-500 block py-2 px-4">3</button>
+        <button class="border border-gray-500 block py-2 px-4">4</button>
+      </div>
+    </main>
+    <div class="js-modal hidden">
+      <div
+        class="max-w-[90%] mx-auto fixed top-[15%] left-0 right-0 z-[999] bg-white border border-gray-500 p-5 rounded-lg"
+      >
+        <h2
+          class="js-modal-title text-3xl mb-3 border-b border-gray-400 pb-2"
+        ></h2>
+        <div class="js-modal-content"></div>
+      </div>
+      <div class="js-overlay fixed inset-0 bg-[#0000009f] z-[99]"></div>
+    </div>
+    <script src="js/ex02.js"></script>
+  </body>
+</html>
