@@ -78,5 +78,3 @@ const getProfile = async () => {
   }
 };
 getProfile();
-getProfile();
-getProfile();
