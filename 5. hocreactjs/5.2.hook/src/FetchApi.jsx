@@ -18,11 +18,24 @@ export default function FetchApi() {
       }
     };
     getPosts();
+    const handlePress = (e) => {
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+    document.addEventListener("keyup", handlePress);
+    return () => {
+      document.removeEventListener("keyup", handlePress);
+    };
   }, []);
   const handleDetail = async (id) => {
     setShowModal(true);
     const response = await instance.get(`/posts/${id}`);
     setPost(response.data);
+  };
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setPost(null);
   };
   return (
     <div>
@@ -40,29 +53,43 @@ export default function FetchApi() {
         ))
       )}
       {showModal && (
-        <div
-          style={{
-            position: "fixed",
-            top: "5%",
-            left: 0,
-            right: 0,
-            maxWidth: "70%",
-            marginInline: "auto",
-            background: "#fff",
-            border: "1px solid #ccc",
-            padding: "15px",
-          }}
-        >
-          {!post ? (
-            <h3>Loading...</h3>
-          ) : (
-            <>
-              <h3>{post?.title}</h3>
-              <p>{post?.body}</p>
-            </>
-          )}
-        </div>
+        <>
+          <div
+            style={{
+              position: "fixed",
+              top: "5%",
+              left: 0,
+              right: 0,
+              maxWidth: "70%",
+              marginInline: "auto",
+              background: "#fff",
+              border: "1px solid #ccc",
+              padding: "15px",
+              zIndex: 100,
+            }}
+          >
+            {!post ? (
+              <h3>Loading...</h3>
+            ) : (
+              <>
+                <h3>{post?.title}</h3>
+                <p>{post?.body}</p>
+              </>
+            )}
+          </div>
+          <div
+            style={{
+              position: "fixed",
+              inset: 0,
+              background: "rgb(0 0 0 / 55%)",
+            }}
+            onClick={handleCloseModal}
+          ></div>
+        </>
       )}
     </div>
   );
 }
+
+//useRef
+//context
