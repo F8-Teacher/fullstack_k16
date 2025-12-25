@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+import { increment } from "./store/actions/counterActions";
 export default function App() {
   const dispatch = useDispatch();
   const count = useSelector((state) => {
@@ -6,9 +7,7 @@ export default function App() {
   });
 
   const handleClick = () => {
-    dispatch({
-      type: "counter/increment",
-    });
+    dispatch(increment(10));
   };
   return (
     <div>
@@ -19,3 +18,5 @@ export default function App() {
 }
 
 //dispatch --> reducer --> redux state -> subscribe --> react xử lý tiếp
+
+//function -> return action object -> action creator
