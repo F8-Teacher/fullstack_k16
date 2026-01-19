@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      const getUsers = async () => {
+        const response = await fetch(`http://localhost:3000/users`, {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ahihi`,
+            "x-api-key": "123",
+          },
+        });
+        const data = await response.json();
+        console.log(data);
+      };
+      getUsers();
+    </script> -->
+    <form action="http://localhost:3000/users" method="post">
+      <input type="email" name="email" />
+      <input type="password" name="password" />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
