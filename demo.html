@@ -6,24 +6,20 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <script>
-      const getUsers = async () => {
-        const response = await fetch(`http://localhost:3000/users`, {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ahihi`,
-            "x-api-key": "123",
-          },
+    <button class="btn">Login</button>
+    <script>
+      const btn = document.querySelector(".btn");
+      btn.addEventListener("click", () => {
+        window.location.href = `http://127.0.0.1:3000/auth/login?username=hoangan`;
+      });
+      const getMe = async () => {
+        const response = await fetch(`http://127.0.0.1:3000/auth/me`, {
+          credentials: "include",
         });
         const data = await response.json();
         console.log(data);
       };
-      getUsers();
-    </script> -->
-    <form action="http://localhost:3000/users" method="post">
-      <input type="email" name="email" />
-      <input type="password" name="password" />
-      <button>Submit</button>
-    </form>
+      getMe();
+    </script>
   </body>
 </html>
