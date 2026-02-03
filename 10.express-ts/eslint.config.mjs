@@ -12,6 +12,7 @@ export default defineConfig(
       "no-unused-vars": "error",
       "no-console": "warn",
       "@typescript-eslint/no-explicit-any": "error",
+      "no-undef": "off",
     },
   },
   {
