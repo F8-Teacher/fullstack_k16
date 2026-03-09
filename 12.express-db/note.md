@@ -61,3 +61,20 @@ Ví dụ: Lấy danh sách 10 users mua nhiều hàng nhất
 7. View / Transformer
 
 - Chịu trách nhiệm hiển thị dữ liệu cho client
+
+## Prisma
+
+Các công việc phải làm
+
+1. Thay đổi model
+
+2. Đồng bộ với Database
+
+- npx prisma db push
+- migrate (học sau)
+
+3. Generate client
+
+Mục đích: Hỗ trợ các hàm truy vấn tương ứng với model
+
+npx prisma generate
