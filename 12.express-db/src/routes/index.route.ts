@@ -5,6 +5,7 @@ import { userController } from "../controllers/user.controller";
 // import { userSchema } from "../validators/user.validator";
 import { uploadController } from "../controllers/upload.controller";
 import { upload } from "../middlewares/upload.middleware";
+import { postController } from "../controllers/post.controller";
 const router = express.Router();
 router.get("/", homeController.index);
 router.get("/gioi-thieu", homeController.about);
@@ -18,5 +19,10 @@ router.get("/users/:id", userController.find);
 router.post("/users", userController.create);
 router.put("/users/:id", userController.update);
 router.delete("/users/:id", userController.delete);
+router.delete("/users", userController.deleteMany);
+router.get("/users/:userId/posts", userController.getPosts);
+
+router.get("/posts", postController.index);
+router.post("/posts", postController.create);
 
 export default router;
