@@ -1,0 +1,11 @@
+model User {
+    id        Int       @id @default(autoincrement())
+    email     String    @unique @db.VarChar(100)
+    name      String    @db.VarChar(30)
+    password  String?   @unique @db.VarChar(100)
+    status    Boolean   @default(true)
+    createdAt DateTime? @default(now()) @db.Timestamp()
+    updatedAt DateTime? @default(now()) @updatedAt @db.Timestamp()
+
+    @@map("users")
+}
