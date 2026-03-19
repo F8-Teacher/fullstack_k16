@@ -51,6 +51,7 @@ export const AnyNull = runtime.AnyNull
 
 
 export const ModelName = {
+  LoginHistory: 'LoginHistory',
   User: 'User'
 } as const
 
@@ -68,6 +69,19 @@ export const TransactionIsolationLevel = runtime.makeStrictEnum({
 } as const)
 
 export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
+
+
+export const LoginHistoryScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  deviceId: 'deviceId',
+  ipAddress: 'ipAddress',
+  userAgent: 'userAgent',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type LoginHistoryScalarFieldEnum = (typeof LoginHistoryScalarFieldEnum)[keyof typeof LoginHistoryScalarFieldEnum]
 
 
 export const UserScalarFieldEnum = {
@@ -97,6 +111,15 @@ export const NullsOrder = {
 } as const
 
 export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
+
+
+export const LoginHistoryOrderByRelevanceFieldEnum = {
+  deviceId: 'deviceId',
+  ipAddress: 'ipAddress',
+  userAgent: 'userAgent'
+} as const
+
+export type LoginHistoryOrderByRelevanceFieldEnum = (typeof LoginHistoryOrderByRelevanceFieldEnum)[keyof typeof LoginHistoryOrderByRelevanceFieldEnum]
 
 
 export const UserOrderByRelevanceFieldEnum = {

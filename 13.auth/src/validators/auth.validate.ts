@@ -27,3 +27,7 @@ export const loginSchema = z.object({
 
   password: z.string().min(6, "Mật khẩu phải từ 6 ký tự"),
 });
+
+export const refreshTokenSchema = z.object({
+  refreshToken: z.string().min(1, "Chưa cung cấp refresh token"),
+});

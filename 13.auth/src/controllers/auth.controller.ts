@@ -9,9 +9,7 @@ export const authController = {
       return res.json({
         data: result,
       });
-    } catch (error) {
-      console.log(error);
-
+    } catch {
       return res.status(401).json({
         message: "Email hoặc mật khẩu không chính xác",
       });
@@ -34,4 +32,44 @@ export const authController = {
     await authService.logout(req.tokenJti!, req.tokenExp!);
     return res.json({});
   },
+  refreshToken: async (req: Request, res: Response) => {
+    const { refreshToken } = req.body;
+    const newToken = await authService.refreshToken(refreshToken);
+    return res.json({
+      message: "Refresh token thành công",
+      data: newToken,
+    });
+  },
+  loginHistories: async (req: Request, res: Response) => {
+    const histories = await authService.getLoginHistories(req.user!.id);
+    return res.json({
+      data: histories,
+    });
+  },
+  logoutDevice: async (req: Request, res: Response) => {
+    const { deviceId } = req.body;
+    await authService.logoutDevice(deviceId, req.user!.id);
+    return res.json({
+      message: "Logout device thành công",
+    });
+  },
+  logoutAllDeviceByUser: async (req: Request, res: Response) => {
+    await authService.logoutAllDeviceByUser(req.user!.id);
+    return res.json({});
+  },
 };
+
+/*
+Login --> Tạo access token, refresh token
+Refresh token -->
++ Verify refresh token xem có hợp lệ không?
++ Decoded refresh token để lấy userId
++ Tạo access token mới với userId đã lấy được
+
+Refresh token rotation
+
+Request /refresh-token 
++ Cấp access mới
++ Cấp refresh mới
++ Thu hồi refresh cũ
+*/
