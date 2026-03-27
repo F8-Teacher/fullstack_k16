@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
-const CLIENT_ID =
-  "213612868865-c1q8kdrres8vomu5oueo314igfagtboc.apps.googleusercontent.com";
-const CLIENT_SECRET = "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";
+const CLIENT_ID = "";
+const CLIENT_SECRET = "";
 const CALLBACK_URI = "http://localhost:3000/auth/google/callback";
 const FRONTEND = "http://localhost:5173";
 export const authController = {
