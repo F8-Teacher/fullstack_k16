@@ -29,8 +29,8 @@ export * from "./enums"
  * const prisma = new PrismaClient({
  *   adapter: new PrismaPg({ connectionString: process.env.DATABASE_URL })
  * })
- * // Fetch zero or more LoginHistories
- * const loginHistories = await prisma.loginHistory.findMany()
+ * // Fetch zero or more Posts
+ * const posts = await prisma.post.findMany()
  * ```
  * 
  * Read more in our [docs](https://pris.ly/d/client).
@@ -40,10 +40,10 @@ export type PrismaClient<LogOpts extends Prisma.LogLevel = never, OmitOpts exten
 export { Prisma }
 
 /**
- * Model LoginHistory
+ * Model Post
  * 
  */
-export type LoginHistory = Prisma.LoginHistoryModel
+export type Post = Prisma.PostModel
 /**
  * Model User
  * 

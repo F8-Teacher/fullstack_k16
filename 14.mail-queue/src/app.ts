@@ -2,11 +2,11 @@ import express from "express";
 import "dotenv/config";
 import indexRoute from "./routes/index.route";
 import path from "node:path";
-// import "./workers/index.worker";
+import morgan from "morgan";
 import { errorHandlingMiddleware } from "./middlewares/errorHandling.middleware";
 const PORT: number = 3000;
 const app = express();
-
+app.use(morgan("dev"));
 app.use(express.json()); //parse body là json
 app.use(express.urlencoded()); //parse body là urlendcoded
 

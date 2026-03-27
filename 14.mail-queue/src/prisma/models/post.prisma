@@ -1,11 +1,10 @@
-model LoginHistory {
+model Post {
     id        Int       @id @default(autoincrement())
-    userId    Int
-    deviceId  String
-    ipAddress String
-    userAgent String    @db.Text()
+    title     String
+    content   String    @db.Text()
+    status    Boolean   @default(true)
     createdAt DateTime? @default(now()) @db.Timestamp()
     updatedAt DateTime? @default(now()) @updatedAt @db.Timestamp()
 
-    @@map("login_histories")
+    @@map("posts")
 }

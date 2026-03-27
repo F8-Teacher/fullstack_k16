@@ -17,6 +17,12 @@ bullMq.createWorker("EMAIL_QUEUE", async (job: Job) => {
   }
 });
 
+bullMq.createWorker("SUBSCRIPTION_QUEUE", async (job: Job) => {
+  if (job.name === "subscription-expired") {
+    console.log(`Đang kiểm tra subscription user: ${job.data.userId}`);
+  }
+});
+
 //cronjob
 //cache (redis)
 //oauth 2.0

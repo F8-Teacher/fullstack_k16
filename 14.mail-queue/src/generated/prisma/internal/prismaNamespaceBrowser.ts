@@ -51,7 +51,7 @@ export const AnyNull = runtime.AnyNull
 
 
 export const ModelName = {
-  LoginHistory: 'LoginHistory',
+  Post: 'Post',
   User: 'User'
 } as const
 
@@ -71,17 +71,16 @@ export const TransactionIsolationLevel = runtime.makeStrictEnum({
 export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
 
 
-export const LoginHistoryScalarFieldEnum = {
+export const PostScalarFieldEnum = {
   id: 'id',
-  userId: 'userId',
-  deviceId: 'deviceId',
-  ipAddress: 'ipAddress',
-  userAgent: 'userAgent',
+  title: 'title',
+  content: 'content',
+  status: 'status',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const
 
-export type LoginHistoryScalarFieldEnum = (typeof LoginHistoryScalarFieldEnum)[keyof typeof LoginHistoryScalarFieldEnum]
+export type PostScalarFieldEnum = (typeof PostScalarFieldEnum)[keyof typeof PostScalarFieldEnum]
 
 
 export const UserScalarFieldEnum = {
@@ -113,13 +112,12 @@ export const NullsOrder = {
 export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
 
 
-export const LoginHistoryOrderByRelevanceFieldEnum = {
-  deviceId: 'deviceId',
-  ipAddress: 'ipAddress',
-  userAgent: 'userAgent'
+export const PostOrderByRelevanceFieldEnum = {
+  title: 'title',
+  content: 'content'
 } as const
 
-export type LoginHistoryOrderByRelevanceFieldEnum = (typeof LoginHistoryOrderByRelevanceFieldEnum)[keyof typeof LoginHistoryOrderByRelevanceFieldEnum]
+export type PostOrderByRelevanceFieldEnum = (typeof PostOrderByRelevanceFieldEnum)[keyof typeof PostOrderByRelevanceFieldEnum]
 
 
 export const UserOrderByRelevanceFieldEnum = {
