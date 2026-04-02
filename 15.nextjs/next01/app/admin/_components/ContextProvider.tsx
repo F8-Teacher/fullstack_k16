@@ -12,5 +12,6 @@ export default function ContextProvider({
   children: React.ReactNode;
 }) {
   const [message, setMessage] = useState<string>("");
+
   return <AppContext value={{ message, setMessage }}>{children}</AppContext>;
 }
